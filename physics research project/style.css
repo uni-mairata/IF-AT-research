@@ -1,0 +1,66 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gothan Rounded, sans-serif;
+    font-weight: normal;
+}  
+  
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #002f76)
+}
+
+.submit {
+    justify-content: center;
+    align-content: center;
+}
+
+.ticket-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: min max(120px, auto) repeat(5, 100px);
+
+}
+
+.ticket-grid > button {
+   
+    cursor: pointer;
+    font-size: 2rem;
+    border: 6px solid white;
+    outline: none;
+    background-color: grey;
+}
+
+.ticket-grid > button:hover {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 6px solid white;
+    outline: none;
+    background-color: rgb(87, 87, 87);
+}
+
+.title {
+    grid-column: 1/ -1;
+    background-color: black, .75;
+}
+
+h1 {
+    width: 300px;
+    height:50px;
+    align-content: center;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    position: relative; top:175px;
+  }
+  
+  div {
+    text-align: center;
+    max-height: 10vh;
+  }
+
